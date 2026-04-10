@@ -85,8 +85,8 @@ Controls **dump (backup)** and **fsck (filesystem check)**
 
 ```
 0 = Skip check
-1 = Root filesystem
-2 = Other filesystems
+1 = Root filesystem ( first root filesystem)
+2 = Other filesystems (after root /)
 ```
 
 ---
