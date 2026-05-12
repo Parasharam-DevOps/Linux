@@ -1,0 +1,27 @@
+Date: 07/03/2026
+
+Subject: Linux Boot Process
+
+Today, I am sharing a small summary about Linux Boot Process.
+
+1. BIOS / UEFI
+When the computer is powered on, BIOS or UEFI starts first. It performs POST (Power-On Self Test) to check hardware components like CPU, RAM, and storage, and then looks for a bootable device.
+
+2. GRUB (Bootloader)
+After that, the bootloader such as GRUB (GNU GRand Unified Bootloader) loads. It displays the boot menu and loads the Linux kernel into memory.
+
+3. Kernel
+The Linux kernel initializes hardware drivers, mounts the root filesystem, and starts the first system process.
+
+4. systemd / init
+Then systemd (the init system) starts. It runs as PID 1 and starts system services like networking and logging.
+
+5. Runlevel / Target
+Finally, the system reaches the required runlevel or target, and the login prompt or graphical login screen appears.
+
+✅ Boot Sequence:
+
+BIOS/UEFI → GRUB → Kernel → systemd → Runlevel/Target → Login
+
+Regards,
+Parasharam Desai
